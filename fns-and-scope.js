@@ -5,7 +5,10 @@ var name = 'Tyler';
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
   //Code Here
-
+function isTyler(name){
+  return name==="Tyler"? true:false;
+}
+console.log(isTyler('Tyler'));
 //////////////////PROBLEM 2////////////////////
 
 
@@ -13,7 +16,10 @@ var name = 'Tyler';
 
 
   //Code Here
-
+function getName(){
+  var name = prompt("please enter your name", "John Wick");
+  return name;
+}
 
 //////////////////PROBLEM 3////////////////////
 
@@ -23,7 +29,9 @@ var name = 'Tyler';
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
-
+function welcome(){
+  return "Welcome, "+getName();
+}
 
 //////////////////PROBLEM 4////////////////////
 
@@ -33,7 +41,8 @@ var name = 'Tyler';
 //What is the difference between arguments and parameters?
 
   //Answer Here
-
+  //"The difference between arguments and parameters is that a parameter is passed in to a function in the declaration stage Ie: Fucntion Name(param,param).
+//  where as an argument is passed to an already completed statement Ie:Name(arg,arg)";
 
 //////////////////PROBLEM 5////////////////////
 
@@ -43,7 +52,9 @@ var name = 'Tyler';
 
 
   //Answer Here
-
+//False, 0, null, NaN, Undefined
+var test = 1;
+console.log(test? true:false);
 
 
 //////////////////PROBLEM 6////////////////////
@@ -53,15 +64,19 @@ var name = 'Tyler';
 //Create a function called myName that returns your name
 
   //Code Here
-  
+function myName(name){
+  return name;
+}
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
-
+var newMyName = myName('mike');
 //Now alert the result of invoking newMyName
 
+
+// alert(newMyName);
 
 
 //////////////////PROBLEM 7////////////////////
@@ -71,9 +86,12 @@ var name = 'Tyler';
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
   //Code Here
-
+function outerFn(){
+  return function(){return "mike";};
+}
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
-
+var innerFn  = outerFn();
 //Now invoke innerFn.
+console.log(innerFn);
