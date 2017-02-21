@@ -30,6 +30,7 @@ function getName(){
 
   //Code Here
 function welcome(){
+    alert("Welcome, "+ getName());
   return "Welcome, "+getName();
 }
 
@@ -64,15 +65,15 @@ console.log(test? true:false);
 //Create a function called myName that returns your name
 
   //Code Here
-function myName(name){
-  return name;
+function myName(){
+  return "Mike";
 }
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
-var newMyName = myName('mike');
+var newMyName = myName;
 //Now alert the result of invoking newMyName
 
 
